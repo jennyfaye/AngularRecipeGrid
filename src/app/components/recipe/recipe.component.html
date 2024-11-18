@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular Recipe Grid</title>
+</head>
+<body>
+  <div class="recipe-grid">
+  <div *ngFor="let recipe of recipeList" class="recipe-grid__item">
+    <img
+      class="recipe-grid__image"
+      [src]="recipe.imageUrl"
+    />
+    <h2 class="recipe-grid__name">{{ recipe.name }}</h2>
+    <p class="recipe-grid__author">{{ recipe.ingredients }}</p>
+    <button class="recipe-grid__button">View Details</button>
+  </div>
+  </div>
+</body>
+</html>
